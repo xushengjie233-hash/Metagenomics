@@ -4,8 +4,6 @@
 **操作日期**: 2025-12
 **操作人员**: Shengjie Xu
 
-[TOC]
-
 ## 1. Data Verification——md5sum
 
 为了确保下载数据的完整性，我们需要计算本地文件的 MD5 值，并与数据库中提供的md5sum.txt进行比对
