@@ -1,4 +1,4 @@
-# Metagenomics# Metagenomics
+# Metagenomics
 
 Personal metagenomics workflows and analysis notes.
 
