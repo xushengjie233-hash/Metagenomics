@@ -96,7 +96,7 @@ python check_txt_vs_txt.py
 
 - [ ] 在/share/home/u24149/miniconda3/envs/bbmap/opt/bbmap-39.52-0/resources目录下，下载了一系列reference_sequence，激活 bbmap 环境即可使用。
 
-  ![image-20251208102605226](/Users/xu.sj/Library/Application Support/typora-user-images/image-20251208102605226.png)
+![](../figures/one_sample_test/image-20251208102605226)
 
 ### Test: 以CRR1071866为例
 
@@ -153,7 +153,7 @@ scp u24149@logini.tongji.edu.cn:"/ssdfs/datahome/u24149/Lab_Member/Students/Shen
 #输入服务器密码
 ```
 
-![image-20251205140426378](/Users/xu.sj/Library/Application Support/typora-user-images/image-20251205140426378.png)
+![image-20251205140426378](../figures/one_sample_test/image-20251205140426378.png)
 
 以一端为例，FastQC 的测序数据质量报告显示：**红色曲线（实际测序序列的 GC 分布）与蓝色曲线（理论正态分布）严重偏离**。环境样本包含多种微生物（细菌、真菌、病毒、古菌），每个物种 GC 含量差异大（细菌 25-75%，真核 40-60%）。导致整体 reads GC 分布宽广、非正态，属于正常现象。
 
@@ -215,7 +215,7 @@ scp u24149@logini.tongji.edu.cn:"/ssdfs/datahome/u24149/Lab_Member/Students/Shen
 #输入服务器密码
 ```
 
-![image-20251205154538205](/Users/xu.sj/Library/Application Support/typora-user-images/image-20251205154538205.png)
+![image-20251205154538205](../figures/one_sample_test/image-20251205154538205.png)
 
 fastp 报告显示GC 含量稳定 ~63%，低质量/短 reads 极少。
 
@@ -249,7 +249,7 @@ scp u24149@logini.tongji.edu.cn:"/ssdfs/datahome/u24149/Lab_Member/Students/Shen
 #输入服务器密码
 ```
 
-![image-20251205165547393](/Users/xu.sj/Library/Application Support/typora-user-images/image-20251205165547393.png)
+![image-20251205165547393](../figures/one_sample_test/image-20251205165547393.png)
 
 Trimming 前后只损失了 **295 条** Reads，说明原始数据的质量极高，绝大部分 Reads 都保留下来了。由于在 `fastp` 脚本中设置了 --length_required 75，Sequence length 分布变为 **75-150 bp**。
 
@@ -403,7 +403,7 @@ scp u24149@logini.tongji.edu.cn:"/ssdfs/datahome/u24149/Lab_Member/Students/Shen
 #输入服务器密码
 ```
 
-![image-20251209103629231](/Users/xu.sj/Library/Application Support/typora-user-images/image-20251209103629231.png)
+![image-20251209103629231](../figures/one_sample_test/image-20251209103629231.png)
 
 BBDuk处理后，所有碱基（A/C/G/T）从头到尾基本平直，无明显峰谷。
 
